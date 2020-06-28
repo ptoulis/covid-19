@@ -1,7 +1,7 @@
 # Analysis of Covid-19 serology tests
 
 This code implements the methods in the paper 
-[Estimation of COVID-19 Prevalence from Serology Tests: A Partial Identification Approach][https://papers.ssrn.com/sol3/Papers.cfm?abstract_id=3587738].
+[Estimation of COVID-19 Prevalence from Serology Tests: A Partial Identification Approach](https://papers.ssrn.com/sol3/Papers.cfm?abstract_id=3587738).
 
 ## Datasets
 
@@ -10,7 +10,7 @@ To load data we use `create_model`:
     m = create_model(1) 
 
 Now `m` contains data from serology study 1 (= Santa Clara). Currently, there are 4 serology studies:
- 1 = Santa Clara of [Bendavid et al (2020)][https://www.medrxiv.org/content/10.1101/2020.04.14.20062463v2]
+ 1 = Santa Clara of [Bendavid et al (2020)](https://www.medrxiv.org/content/10.1101/2020.04.14.20062463v2).
  2 = LA county study ([http://publichealth.lacounty.gov/phcommon/public/media/mediapubhpdetail.cfm?prid=2328])
  3 = Santa Clara + LA combined.
  4 = New York Study ([https://www.nytimes.com/2020/04/23/nyregion/coronavirus-antibodies-test-ny.html])
@@ -44,7 +44,7 @@ To apply the likelihood ratio test of Section 4.3.2 in the paper we can use
 
 This test is valid in finite samples as the main test described above, but it is much slower.
 
-To apply the MCMC-based partial identification methods (Procedure 1 and 3) of [Chen et al (2018)][https://onlinelibrary.wiley.com/doi/abs/10.3982/ECTA14525] we run:
+To apply the MCMC-based partial identification methods (Procedure 1 and 3) of [Chen et al (2018)](https://onlinelibrary.wiley.com/doi/abs/10.3982/ECTA14525) we run:
 
     Proc1_chen(m, num_mcmc=20000)
     Proc3_chen(m)
