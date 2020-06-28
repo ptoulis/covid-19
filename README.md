@@ -2,6 +2,8 @@
 
 This code implements the methods in the paper 
 [Estimation of COVID-19 Prevalence from Serology Tests: A Partial Identification Approach](https://papers.ssrn.com/sol3/Papers.cfm?abstract_id=3587738).
+Compared to alternatives, the main method in this paper is valid in finite samples, and almost exact for all unknown parameters (see below).
+As such, it does not require asymptotics or other approximations, like bootstrap and Bayesian methods do.
 
 ## Datasets
 
