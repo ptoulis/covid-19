@@ -10,11 +10,11 @@ To load data we use `create_model`:
     m = create_model(1) 
 
 Now `m` contains data from serology study 1 (= Santa Clara). Currently, there are 4 serology studies:
- 1 = Santa Clara of [Bendavid et al (2020)](https://www.medrxiv.org/content/10.1101/2020.04.14.20062463v2).
- 2 = LA county study ([http://publichealth.lacounty.gov/phcommon/public/media/mediapubhpdetail.cfm?prid=2328])
- 3 = Santa Clara + LA combined.
- 4 = New York Study ([https://www.nytimes.com/2020/04/23/nyregion/coronavirus-antibodies-test-ny.html])
- 7 = SC + LA + NYC studies combined.
+ * 1 = Santa Clara of [Bendavid et al (2020)](https://www.medrxiv.org/content/10.1101/2020.04.14.20062463v2).
+ * 2 = LA county study ([http://publichealth.lacounty.gov/phcommon/public/media/mediapubhpdetail.cfm?prid=2328])
+ * 3 = Santa Clara + LA combined.
+ * 4 = New York Study ([https://www.nytimes.com/2020/04/23/nyregion/coronavirus-antibodies-test-ny.html])
+ * 7 = SC + LA + NYC studies combined.
 
 Each `model` contains data for the `CalibrationStudy` and data for the `MainStudy`. The calibration studies contain results on true positives and false positives.
 The main study contains positive results of unknown nature (unknown how many are true positives). The (unknown) proportion of true positives over the total number of tests is the (unknown) prevalence, which we want to estimate.
