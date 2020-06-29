@@ -92,6 +92,8 @@ create_Model = function(use_data_no, use_Sharp=TRUE, SC_version=1) {
 
 
 #' Main function. This performs one single test for specific values of the model parameters.
+#' Implements the tests in Equation (8) and Equation (10) of paper.
+#'
 #' theta = (FPR, TPR, num_infect)
 #' @FPR False positive rate: Pr(test=1 | state=0)
 #' @TPR True positive rate: Pr(test=1 | state=1)
